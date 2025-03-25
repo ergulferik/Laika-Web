@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom'
 import './App.css'
 import './styles/Navbar.css'
 import Home from './components/Home'
@@ -25,7 +25,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="nav-brand">
           <Link to="/">
-            <img src="/assets/laikaLogo.png" alt="Laika Logo" className="nav-logo" />
+            <img src="assets/laikaLogo.png" alt="Laika Logo" className="nav-logo" />
             Laika
           </Link>
         </div>

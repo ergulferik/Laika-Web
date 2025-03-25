@@ -6,7 +6,7 @@ export const GAMES_DATA: Game[] = [
       name: "Secret Hitler",
       description:
         "Secret Hitler, 5-10 oyuncuyla oynanan bir blöf ve dedüksiyon oyunudur. Oyuncular gizli kimliklere sahip olup, Liberal ve Faşist tarafları temsil eder. Oyunun amacı, kendi tarafının galip gelmesini sağlamaktır.",
-      image: "/assets/secret-hitler.jpg",
+      image: "assets/secret-hitler.jpg",
       category: ["Blöf", "Dedüksiyon"],
       players: "5-10",
       duration: "45 dakika",
@@ -36,7 +36,7 @@ export const GAMES_DATA: Game[] = [
       name: "Munchkin",
       description:
         "Munchkin, 3-6 oyuncuyla oynanan eğlenceli ve rekabetçi bir kart oyunudur. Oyuncular zindanları keşfeder, canavarlarla savaşır ve birbirlerine tuzak kurar.",
-      image: "/assets/munchkin.jpg",
+      image: "assets/munchkin.jpg",
       category: ["Kart", "Strateji"],
       players: "3-6",
       duration: "60 dakika",
@@ -62,7 +62,7 @@ export const GAMES_DATA: Game[] = [
       name: "Vampir Köylü",
       description:
         "Vampir Köylü, klasik Vampir oyununa benzeyen bir sosyal dedüksiyon oyunudur. Oyuncular köylüler, vampirler ve özel roller alarak gizli kimliklerle birbirlerini analiz etmeye çalışır.",
-      image: "/assets/vampire-and-villagers.png",
+      image: "assets/vampire-and-villagers.png",
       category: ["Sosyal Dedüksiyon"],
       players: "6-20",
       duration: "30-60 dakika",
