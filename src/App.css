@@ -51,6 +51,15 @@ body {
   letter-spacing: -0.5px;
   text-decoration: none;
   transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-brand a:hover {
