@@ -25,7 +25,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="nav-brand">
           <Link to="/">
-            <img src="/assets/laika-logo.png" alt="Laika Logo" className="nav-logo" />
+            <img src="/assets/laikaLogo.png" alt="Laika Logo" className="nav-logo" />
             Laika
           </Link>
         </div>

@@ -28,7 +28,7 @@ const About: React.FC = () => {
           </div>
           <div className="about-image">
             <img 
-              src="/assets/laika-coffe.jpeg" 
+              src="/assets/laikaCoffe.jpeg" 
               alt="Laika Kafe Masa Oyunları" 
             />
           </div>
