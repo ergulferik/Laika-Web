@@ -1,13 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa';
-import '../styles/About.css';
+import React from "react";
+import { motion } from "framer-motion";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from "react-icons/fa";
+import "../styles/About.css";
 
 const About: React.FC = () => {
   return (
     <div className="about-container">
-      <motion.section 
-        id="hakkimizda" 
+      <motion.section
+        id="hakkimizda"
         className="about-section"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -17,26 +17,27 @@ const About: React.FC = () => {
         <div className="about-content">
           <div className="about-text">
             <p>
-              Laika Kafe, 2023 yılında masa oyunu tutkunları için özel olarak tasarlanmış
-              bir mekan olarak açıldı. Amacımız, insanları bir araya getirip keyifli
-              vakit geçirmelerini sağlamak ve masa oyunu kültürünü yaygınlaştırmaktır.
+              Laika Coffee & Culture, sanat, müzik ve topluluk etkinliklerine ev
+              sahipliği yapan benzersiz bir mekandır. İzmir’in Karşıyaka
+              ilçesinde bulunan Laika, sadece kahve sunmakla kalmaz, aynı
+              zamanda kültürel etkinlikler ve atölyelerle misafirlerine
+              unutulmaz deneyimler yaşatır.
             </p>
             <p>
-              Kafemizde 100'den fazla masa oyunu bulunmaktadır. Deneyimli personelimiz,
-              oyunları öğrenmenize ve oynamanıza yardımcı olmaktan mutluluk duyacaktır.
+              Etkinliklerimiz arasında masa oyunları, bilgi yarışmaları, film
+              gösterimleri ve canlı müzik performansları yer almaktadır. Samimi
+              atmosferimiz ve zengin kahve menümüzle sizleri ağırlamaktan
+              mutluluk duyarız.
             </p>
           </div>
           <div className="about-image">
-            <img 
-              src="assets/laikaCoffe.jpeg" 
-              alt="Laika Kafe Masa Oyunları" 
-            />
+            <img src="assets/laikaCoffee.jpeg" alt="Laika Coffee & Culture" />
           </div>
         </div>
       </motion.section>
 
-      <motion.section 
-        id="iletisim" 
+      <motion.section
+        id="iletisim"
         className="contact-section"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -49,43 +50,45 @@ const About: React.FC = () => {
               <FaMapMarkerAlt className="contact-icon" />
               <div>
                 <h3>Adres</h3>
-                <p>Örnek Mahallesi, Oyun Sokak No:123</p>
-                <p>Kadıköy, İstanbul</p>
+                <p>Tuna Mahallesi, İsmail Özkunt Sokak No: 25A</p>
+                <p>Karşıyaka, İzmir</p>
               </div>
             </div>
-            
+
             <div className="contact-item">
               <FaPhone className="contact-icon" />
               <div>
                 <h3>Telefon</h3>
-                <p>(0216) 123 45 67</p>
+                <p>(0232) 456 78 90</p>
               </div>
             </div>
-            
+
             <div className="contact-item">
               <FaEnvelope className="contact-icon" />
               <div>
                 <h3>E-posta</h3>
-                <p>info@laikakafe.com</p>
+                <p>info@laikacoffee.com</p>
               </div>
             </div>
-            
+
             <div className="contact-item">
               <FaClock className="contact-icon" />
               <div>
                 <h3>Çalışma Saatleri</h3>
-                <p>Pazartesi - Cuma: 10:00 - 23:00</p>
-                <p>Cumartesi - Pazar: 11:00 - 00:00</p>
+                <p>Pazartesi - Cuma: 09:00 - 23:00</p>
+                <p>Cumartesi - Pazar: 10:00 - 23:00</p>
               </div>
             </div>
           </div>
-          
+
           <div className="map-container">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.650789456456!2d29.0253!3d40.9909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDU5JzMyLjQiTiAyOcKwMDEnMzEuMSJF!5e0!3m2!1str!2str!4v1234567890"
-              allowFullScreen
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6248.57675677846!2d27.11817147596226!3d38.45790317182118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9da50c85957%3A0xb8e704922dffa807!2sLaika%20Coffee%20%26%20Culture!5e0!3m2!1str!2sus!4v1743282871193!5m2!1str!2sus"
+              width="600"
+              height="450"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
             ></iframe>
           </div>
         </div>
@@ -94,4 +97,4 @@ const About: React.FC = () => {
   );
 };
 
-export default About; 
+export default About;

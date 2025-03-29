@@ -7,6 +7,7 @@ import Games from './components/Games'
 import Menu from './components/Menu'
 import About from './components/About'
 import GameDetail from './components/GameDetail'
+import Events from './components/EventesPage'
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,6 +43,7 @@ function Navbar() {
           <li><Link to="/" className={location.pathname === '/' ? 'active' : ''} onClick={closeMenu}>Ana Sayfa</Link></li>
           <li><Link to="/games" className={location.pathname.startsWith('/games') ? 'active' : ''} onClick={closeMenu}>Oyunlar</Link></li>
           <li><Link to="/menu" className={location.pathname === '/menu' ? 'active' : ''} onClick={closeMenu}>Menü</Link></li>
+          <li><Link to="/events" className={location.pathname === '/events' ? 'active' : ''} onClick={closeMenu}>Etkinlikler</Link></li>  
           <li><Link to="/about" className={location.pathname === '/about' ? 'active' : ''} onClick={closeMenu}>Hakkımızda</Link></li>
         </ul>
       </nav>
@@ -55,13 +57,14 @@ function App() {
     <Router>
       <div className="app">
         <Navbar />
-        <main>
+        <main className='w-[100vw]'>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/games" element={<Games />} />
             <Route path="/games/:id" element={<GameDetail />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/about" element={<About />} />
+            <Route path="/events" element={<Events />} />
           </Routes>
         </main>
       </div>
