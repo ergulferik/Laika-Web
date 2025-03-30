@@ -12,7 +12,7 @@ const GameDetail = () => {
   useEffect(() => {
     const fetchGame = async () => {
       try {
-        const foundGame = GAMES_DATA.find(game => game.id === id);
+        const foundGame = GAMES_DATA.find((game) => game.id === id);
         if (foundGame) {
           console.log(foundGame);
           setGame(foundGame);
@@ -53,7 +53,9 @@ const GameDetail = () => {
           <h1>{game.name}</h1>
           <div className="game-categories">
             {game.category.map((cat, index) => (
-              <span key={index} className="game-category-tag">{cat}</span>
+              <span key={index} className="game-category-tag">
+                {cat}
+              </span>
             ))}
           </div>
           <div className="game-meta">
@@ -91,4 +93,4 @@ const GameDetail = () => {
   );
 };
 
-export default GameDetail; 
+export default GameDetail;

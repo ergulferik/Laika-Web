@@ -1,7 +1,8 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from "react-icons/fa";
-import "../styles/About.css";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa';
+import '../styles/About.css';
+import Gallery from './Gallery';
 
 const About: React.FC = () => {
   return (
@@ -17,22 +18,16 @@ const About: React.FC = () => {
         <div className="about-content">
           <div className="about-text">
             <p>
-              Laika Coffee & Culture, sanat, müzik ve topluluk etkinliklerine ev
-              sahipliği yapan benzersiz bir mekandır. İzmir’in Karşıyaka
-              ilçesinde bulunan Laika, sadece kahve sunmakla kalmaz, aynı
-              zamanda kültürel etkinlikler ve atölyelerle misafirlerine
-              unutulmaz deneyimler yaşatır.
+              Laika Coffee & Culture, sanat, müzik ve topluluk etkinliklerine ev sahipliği yapan benzersiz bir mekandır.
+              İzmir’in Karşıyaka ilçesinde bulunan Laika, sadece kahve sunmakla kalmaz, aynı zamanda kültürel
+              etkinlikler ve atölyelerle misafirlerine unutulmaz deneyimler yaşatır.
             </p>
             <p>
-              Etkinliklerimiz arasında masa oyunları, bilgi yarışmaları, film
-              gösterimleri ve canlı müzik performansları yer almaktadır. Samimi
-              atmosferimiz ve zengin kahve menümüzle sizleri ağırlamaktan
-              mutluluk duyarız.
+              Etkinliklerimiz arasında masa oyunları, bilgi yarışmaları, film gösterimleri ve canlı müzik performansları
+              yer almaktadır. Samimi atmosferimiz ve zengin kahve menümüzle sizleri ağırlamaktan mutluluk duyarız.
             </p>
           </div>
-          <div className="about-image">
-            <img src="assets/laikaCoffee.jpeg" alt="Laika Coffee & Culture" />
-          </div>
+          <Gallery />
         </div>
       </motion.section>
 

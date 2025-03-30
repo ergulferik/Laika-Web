@@ -1,66 +1,18 @@
-import React from "react";
+import React from 'react';
+import MENU_ITEMS from '../data/Menu.data';
+import { MenuItem } from '../models/menu.model';
 
-interface MenuItem {
-  id: number;
-  category: string;
-  name: string;
-  description: string;
-  price: number;
-}
-
-const menuItems: MenuItem[] = [
-  {
-    id: 1,
-    category: "İçecekler",
-    name: "Türk Kahvesi",
-    description: "Geleneksel Türk kahvesi",
-    price: 45,
-  },
-  {
-    id: 2,
-    category: "İçecekler",
-    name: "Espresso",
-    description: "İtalyan usulü espresso",
-    price: 35,
-  },
-  {
-    id: 3,
-    category: "İçecekler",
-    name: "Latte",
-    description: "Sütlü espresso",
-    price: 40,
-  },
-  {
-    id: 4,
-    category: "Tatlılar",
-    name: "Cheesecake",
-    description: "Ev yapımı New York cheesecake",
-    price: 55,
-  },
-  {
-    id: 5,
-    category: "Tatlılar",
-    name: "Tiramisu",
-    description: "İtalyan usulü tiramisu",
-    price: 50,
-  },
-];
+const menuItems: MenuItem[] = MENU_ITEMS;
 
 const Menu: React.FC = () => {
-  const categories = Array.from(
-    new Set(menuItems.map((item) => item.category))
-  );
+  const categories = Array.from(new Set(menuItems.map((item) => item.category)));
 
   return (
     <section id="menu" className="menu-section">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-primary mb-4">
-          Menümüz
-        </h1>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Özel kahvelerimiz ve lezzetli tatlılarımız
-        </p>
-      </div>{" "}
+        <h1 className="text-4xl font-bold text-primary mb-4">Menümüz</h1>
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">Özel kahvelerimiz ve lezzetli tatlılarımız</p>
+      </div>{' '}
       {categories.map((category) => (
         <div key={category} className="menu-category">
           <h3>{category}</h3>

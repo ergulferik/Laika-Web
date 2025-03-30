@@ -8,7 +8,7 @@
   align-items: center;
   overflow: hidden;
   padding: 0 20px;
-  background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
 }
 
 .hero-section::before {
@@ -18,10 +18,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.5) 100%);
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
   z-index: 2;
 }
-
 
 .hero-section h1 {
   font-size: 4rem;
@@ -88,12 +87,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255, 255, 255, 0.3),
-    transparent
-  );
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
   transition: 0.5s;
 }
 
@@ -102,7 +96,7 @@
 }
 
 .btn-primary {
-  background: linear-gradient(45deg, #1F0600, #2a0a00);
+  background: linear-gradient(45deg, #1f0600, #2a0a00);
   color: white;
   box-shadow: 0 4px 15px rgba(31, 6, 0, 0.3);
 }
@@ -120,7 +114,7 @@
 }
 
 .btn-primary:hover {
-  background: linear-gradient(45deg, #2a0a00, #1F0600);
+  background: linear-gradient(45deg, #2a0a00, #1f0600);
 }
 
 .btn-secondary:hover {
@@ -232,4 +226,4 @@
   .btn {
     padding: 0.8rem 1.6rem;
   }
-} 
+}
