@@ -8,6 +8,10 @@ import Menu from './components/Menu';
 import About from './components/About';
 import GameDetail from './components/GameDetail';
 import Events from './components/EventesPage';
+import Products from './components/Products';
+import ProductDetail from './components/ProductDetail';
+import Cart from './components/Cart';
+import { CartProvider } from './contexts/CartContext';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,6 +60,11 @@ function Navbar() {
             </Link>
           </li>
           <li>
+            <Link to="/products" className={location.pathname.startsWith('/products') ? 'active' : ''} onClick={closeMenu}>
+              Ürünler
+            </Link>
+          </li>
+          <li>
             <Link to="/events" className={location.pathname === '/events' ? 'active' : ''} onClick={closeMenu}>
               Etkinlikler
             </Link>
@@ -74,21 +83,26 @@ function Navbar() {
 
 function App() {
   return (
-    <Router>
-      <div className="app">
-        <Navbar />
-        <main className="w-[100vw]">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/games" element={<Games />} />
-            <Route path="/games/:id" element={<GameDetail />} />
-            <Route path="/menu" element={<Menu />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/events" element={<Events />} />
-          </Routes>
-        </main>
-      </div>
-    </Router>
+    <CartProvider>
+      <Router>
+        <div className="app">
+          <Navbar />
+          <Cart />
+          <main className="w-[100vw]">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/games" element={<Games />} />
+              <Route path="/games/:id" element={<GameDetail />} />
+              <Route path="/menu" element={<Menu />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/products/:id" element={<ProductDetail />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/events" element={<Events />} />
+            </Routes>
+          </main>
+        </div>
+      </Router>
+    </CartProvider>
   );
 }
 

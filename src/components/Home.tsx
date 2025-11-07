@@ -22,7 +22,10 @@ const Home: React.FC = () => {
         <Link to="/menu" className="btn btn-secondary">
           MENÜ
         </Link>
-        <Link to="/events" className="btn btn-primary">
+        <Link to="/products" className="btn btn-primary">
+          ÜRÜNLER
+        </Link>
+        <Link to="/events" className="btn btn-secondary">
           ETKİNLİKLER
         </Link>
       </div>
